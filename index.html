@@ -10,6 +10,45 @@
     <ul>
       <li></li>
     </ul>
+    <!-- 
+
+      // 查看用户名和邮箱 git config --global --list
+      // 在本地建git仓库 
+        1. cd 文件名
+        2. git init
+      // 查看文件状态 git status 工作区  暂存区   历史区
+      // 工作区文件提交至暂存区  
+        git add "文件名"  // 把修改的特定的文件提交至暂存区
+        git add .     // 把修改的所有文件提交至暂存区
+        git add -A    // 把修改的所有文件提交至暂存区
+      // 回滚至之前的某个历史版本  
+        git reset --hard 历史版本号
+      // 查看历史版本 git log
+      // 查看所有的历史版本，包含回滚的信息 git reflog
+      // 暂存区文件提交至历史区 git commit -m"注释内容"
+      // 本地仓库与远程仓库建立连接
+        git remote add origin 远程仓库地址
+      // 解除本地仓库与远程仓库的关联
+        git remote rm origin
+      // 查看本地仓库与哪个远程仓库关联
+        git remote -v
+      // 拉取远程仓库的内容至本地仓库
+        git pull origin
+      // 把历史区的文件提交至远程仓库
+        git push origin master
+      // git 克隆
+        git clone 远程仓库地址    相当于干了以下几步
+          git init 
+          git remote add origin 
+          git pull origin
+        // 小组成员开发代码 
+          git add . 
+          git commit -m"注释"
+          git pull origin 
+          git push origin master
+          // 如果项目是克隆下来的 可以直接 git push 不用加origin master
+
+     -->
   </div>
 </body>
 </html>
